@@ -1,4 +1,4 @@
-import ComoFunciona from "@/components/como_funciona/ComoFunciona";
+import ComoFunciona from "@/components/home/como_funciona/ComoFunciona";
 
 export default function Home() {
   return (
