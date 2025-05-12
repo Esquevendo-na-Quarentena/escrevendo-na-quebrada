@@ -5,7 +5,7 @@ import { cardComoFuncionaData } from "@/data/data";
 const ComoFunciona = () => {
   
   return (
-    <section className="flex flex-col items-center my-10">
+    <section className="flex flex-col items-center my-10 h-screen">
       <div className="text-center">
         <h2 className="text-[28px] font-bold my-5">Como Funciona</h2>
         <h3 className="text-[40px]">
