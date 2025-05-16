@@ -13,7 +13,7 @@ const ComoFunciona = () => {
             em vestibulares através de quatro tarefas:
           </h3>
         </div>
-        <div className="flex flex-col  items-center lg:flex-row gap-16 justify-center w-full">
+        <div className="flex flex-col  items-center flex-wrap lg:flex-nowrap sm:flex-row gap-16 justify-center w-full">
           {cardComoFuncionaData.map((item) => (
             <div
               key={item.id}
