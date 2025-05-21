@@ -12,7 +12,7 @@ const Resultados = () => {
             redações continua ampliando oportunidades e fortalecendo a educação.
           </p>
         </div>
-        <div className="mx-auto">
+        <div className="mx-auto lg:w-[70rem]">
           <CardNumber />
         </div>
       </div>
