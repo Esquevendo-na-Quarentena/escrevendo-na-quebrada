@@ -127,6 +127,16 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
+          <div className="p-10">
+            <Link
+            target="_blank"
+            href={" https://www.paraquemdoar.com.br/escrevendo-na-quebrada "}
+          >
+            <Button className="rounded-md px-8" bg="bg-[#10a2c7]">
+              DOE
+            </Button>
+          </Link>
+          </div>
         </div>
 
         <div className="hidden lg:flex gap-10">
@@ -149,8 +159,13 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
-          <Link target="_blank" href={' https://www.paraquemdoar.com.br/escrevendo-na-quebrada '}>
-            <Button className="rounded-md px-8" bg="bg-[#10a2c7]">DOE</Button>
+          <Link
+            target="_blank"
+            href={" https://www.paraquemdoar.com.br/escrevendo-na-quebrada "}
+          >
+            <Button className="rounded-md px-8" bg="bg-[#10a2c7]">
+              DOE
+            </Button>
           </Link>
         </div>
       </div>
