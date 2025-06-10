@@ -30,7 +30,7 @@ const Accordion = () => {
           </div>
           <div
             className={`overflow-hidden transition-all duration-500 ease-in-out ${
-              item.id === activeId ? "max-h-96 py-5" : "max-h-0"
+              item.id === activeId ? "max-h-[50rem] py-5" : "max-h-0"
             } px-6 sm:px-12`}
           >
             <hr className="border-white" />
