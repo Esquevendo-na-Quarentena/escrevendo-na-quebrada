@@ -16,21 +16,16 @@ const Accordion = () => {
           key={item.id}
           className="flex flex-col md:w-4/5 bg-roxo-escuro text-white py-3 rounded-3xl shadow-md shadow-preto1"
         >
-          <div className="flex items-center justify-between gap-2  px-6  ">
+          <div
+            className="flex items-center cursor-pointer justify-between gap-2  px-6  "
+            onClick={() => handleToggle(item.id)}
+          >
             <div></div>
             <h2 className="text-base sm:text-lg">{item.title}</h2>
             {item.id !== activeId ? (
-              <FaPlus
-                onClick={() => handleToggle(item.id)}
-                className="cursor-pointer"
-                size={25}
-              />
+              <FaPlus className="cursor-pointer" size={25} />
             ) : (
-              <FaMinus
-                onClick={() => handleToggle(item.id)}
-                className="cursor-pointer"
-                size={25}
-              />
+              <FaMinus className="cursor-pointer" size={25} />
             )}
           </div>
           <div
@@ -41,7 +36,9 @@ const Accordion = () => {
             <hr className="border-white" />
             <div className="pt-4">
               {item.text.map((item, index) => (
-                <p className="py-2" key={index}>{item}</p>
+                <p className="py-2" key={index}>
+                  {item}
+                </p>
               ))}
             </div>
             {item.list && (
@@ -53,6 +50,7 @@ const Accordion = () => {
                 ))}
               </ul>
             )}
+            {item.text2 && <p className="py-2">{item.text2}</p>}
           </div>
         </div>
       ))}
