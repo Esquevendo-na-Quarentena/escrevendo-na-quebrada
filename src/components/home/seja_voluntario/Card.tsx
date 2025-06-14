@@ -1,4 +1,5 @@
 import Button from "@/components/Button";
+import Link from "next/link";
 
 interface CardProps {
   className?: string;
@@ -20,9 +21,15 @@ const Card = ({ className }: CardProps) => {
           são fundamentais para que o projeto aconteça.
         </p>
       </div>
-      <Button className="mt-3 py-2 text-sm">
-        Faça parte do EQ
-      </Button>
+      <Link
+      target="_blank"
+        className="w-full"
+        href={
+          "https://docs.google.com/forms/d/e/1FAIpQLSeFsrdiXeEmsaoGH-IbydmVDJY_tFn7FHkggwR1RP7KDkbebA/viewform"
+        }
+      >
+        <Button className="mt-3 py-2 text-sm">Faça parte do EQ</Button>
+      </Link>
     </article>
   );
 };
