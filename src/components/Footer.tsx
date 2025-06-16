@@ -44,40 +44,60 @@ const Footer = () => {
             Quebrada. Criado por{" "}
             <Link
               target="_blank"
-              href={"https://www.linkedin.com/in/tainaalvesdeoliveira/"}
-            >
-              Taina Alves,
-            </Link>{" "}
-            <Link
-              target="_blank"
-              href={"https://www.linkedin.com/in/thiago-alves-dev/"}
-            >
-              Thiago Alves,
-            </Link>{" "}
-            <Link
-              target="_blank"
               href={"https://www.linkedin.com/in/gabryella-maria-milagres/"}
+              className="text-blue-400 hover:bg-[#9B2693]/70 hover:text-white1 hover:p-1 hover:rounded-md"
             >
-              Gabryella Milan,
-            </Link>{" "}
+              Gabryella Milagres
+            </Link>
+            ,{" "}
             <Link
               target="_blank"
               href={"https://www.linkedin.com/in/iago-boebel/"}
+              className="text-blue-400 hover:bg-[#E8731D]/70 hover:text-white1 hover:p-1 hover:rounded-md"
             >
-              Iago Boebel,
-            </Link>{" "}
+              Iago Boebel
+            </Link>
+            ,{" "}
             <Link
               target="_blank"
               href={"https://www.linkedin.com/in/mauricio-antero/"}
+              className="text-blue-400 hover:bg-[#287A9A]/70 hover:text-white1 hover:p-1 hover:rounded-md"
             >
               Mauricio Antero
+            </Link>
+            ,{" "}
+            <Link
+              target="_blank"
+              href={"https://www.linkedin.com/in/tainaalvesdeoliveira/"}
+              className="text-blue-400 hover:bg-[#3EA40D]/70 hover:text-white1 hover:p-1 hover:rounded-md"
+            >
+              Taina Alves
+            </Link>
+            ,{" "}
+            <Link
+              target="_blank"
+              href={"https://www.linkedin.com/in/thiago-alves-dev/"}
+              className="text-blue-400 hover:bg-[#BE2578]/70 hover:text-white1 hover:p-1 hover:rounded-md"
+            >
+              Thiago Alves
+            </Link>
+            ,{" "}
+            <Link
+              target="_blank"
+              href={"https://br.linkedin.com/in/vitoria-loraine-096124254"}
+              className="text-blue-400 hover:bg-[#145262]/70 hover:text-white1 hover:p-1 hover:rounded-md"
+            >
+              Vitoria Loraine
             </Link>
           </p>
         </div>
 
         <ul className="flex gap-6 pr-8">
           {socialMediaIcons.map((item) => (
-            <li key={item.id} className="cursor-pointer hover:opacity-75 hover:scale-110">
+            <li
+              key={item.id}
+              className="cursor-pointer hover:opacity-75 hover:scale-110"
+            >
               <Link href={item.href} target="_blank">
                 {item.icon}
               </Link>
