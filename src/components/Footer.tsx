@@ -89,6 +89,13 @@ const Footer = () => {
             >
               Vitoria Loraine
             </Link>
+            <Link
+              target="_blank"
+              href={"https://br.linkedin.com/in/mileto"}
+              className="text-blue-400 hover:bg-[#145262]/70 hover:text-white1 hover:p-1 hover:rounded-md"
+            >
+              Mirtilo Almeida
+            </Link>
           </p>
         </div>
 
