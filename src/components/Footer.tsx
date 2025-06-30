@@ -68,6 +68,14 @@ const Footer = () => {
             ,{" "}
             <Link
               target="_blank"
+              href={"https://br.linkedin.com/in/mileto"}
+              className="text-blue-400 hover:bg-[#FF8E17]/70 hover:text-white1 hover:p-1 hover:rounded-md"
+            >
+              Mirtilo Almeida
+            </Link>
+            ,{" "}
+            <Link
+              target="_blank"
               href={"https://www.linkedin.com/in/tainaalvesdeoliveira/"}
               className="text-blue-400 hover:bg-[#3EA40D]/70 hover:text-white1 hover:p-1 hover:rounded-md"
             >
@@ -88,13 +96,6 @@ const Footer = () => {
               className="text-blue-400 hover:bg-[#145262]/70 hover:text-white1 hover:p-1 hover:rounded-md"
             >
               Vitoria Loraine
-            </Link>
-            <Link
-              target="_blank"
-              href={"https://br.linkedin.com/in/mileto"}
-              className="text-blue-400 hover:bg-[#145262]/70 hover:text-white1 hover:p-1 hover:rounded-md"
-            >
-              Mirtilo Almeida
             </Link>
           </p>
         </div>
