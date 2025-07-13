@@ -1,6 +1,7 @@
 import Hero from "@/components/seja_voluntario/hero/Hero";
 import PartnerEnterprises from "@/components/seja_voluntario/partner_enterprises/PartnerEnterprises";
 import ReasonsToBeVolunteer from "@/components/seja_voluntario/reasons_to_be_volunteer/ReasonsToBeVolunteer";
+import SectionsAndVolunteers from "@/components/seja_voluntario/sections_and_volunteers/SectionsAndVolunteers";
 import SelectionProcess from "@/components/seja_voluntario/selection_process/SelectionProcess";
 
 const SejaVoluntario = () => {
@@ -11,6 +12,7 @@ const SejaVoluntario = () => {
         <ReasonsToBeVolunteer />
         <PartnerEnterprises />
         <SelectionProcess />
+        <SectionsAndVolunteers />
       </div>
     </main>
   );
