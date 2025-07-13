@@ -1,7 +1,7 @@
-import React from 'react'
-import Hero from '@/components/seja_voluntario/hero/Hero'
-import ReasonsToBeVolunteer from '@/components/seja_voluntario/reasons_to_be_volunteer/ReasonsToBeVolunteer'
-import PartnerEnterprises from '@/components/seja_voluntario/partner_enterprises/PartnerEnterprises'
+import Hero from "@/components/seja_voluntario/hero/Hero";
+import PartnerEnterprises from "@/components/seja_voluntario/partner_enterprises/PartnerEnterprises";
+import ReasonsToBeVolunteer from "@/components/seja_voluntario/reasons_to_be_volunteer/ReasonsToBeVolunteer";
+import SelectionProcess from "@/components/seja_voluntario/selection_process/SelectionProcess";
 
 const SejaVoluntario = () => {
   return (
@@ -10,9 +10,10 @@ const SejaVoluntario = () => {
         <Hero />
         <ReasonsToBeVolunteer />
         <PartnerEnterprises />
+        <SelectionProcess />
       </div>
     </main>
-  )
-}
+  );
+};
 
-export default SejaVoluntario
+export default SejaVoluntario;
