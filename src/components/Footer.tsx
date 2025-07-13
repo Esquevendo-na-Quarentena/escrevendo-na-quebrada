@@ -11,18 +11,18 @@ const currentYear = new Date().getFullYear();
 const socialMediaIcons = [
   {
     id: "instagram",
-    icon: <PiInstagramLogoBold size={37} />,
+    icon: <PiInstagramLogoBold className="text-preto1" size={30} />,
     href: "https://www.instagram.com/escrevendonaquebrada/",
   },
 
   {
     id: "linkedin",
-    icon: <PiLinkedinLogoBold size={37} />,
+    icon: <PiLinkedinLogoBold className="text-preto1" size={30} />,
     href: "https://www.linkedin.com/company/escrevendonaquebrada/",
   },
   {
     id: "facebook",
-    icon: <PiFacebookLogoBold size={37} />,
+    icon: <PiFacebookLogoBold className="text-preto1" size={30} />,
     href: "https://www.facebook.com/Escrevendoquebrada",
   },
 ];

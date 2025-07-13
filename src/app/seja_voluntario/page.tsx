@@ -1,14 +1,21 @@
-import React from 'react'
-import Hero from '@/components/seja_voluntario/hero/Hero'
+import Hero from "@/components/seja_voluntario/hero/Hero";
+import PartnerEnterprises from "@/components/seja_voluntario/partner_enterprises/PartnerEnterprises";
+import ReasonsToBeVolunteer from "@/components/seja_voluntario/reasons_to_be_volunteer/ReasonsToBeVolunteer";
+import SectionsAndVolunteers from "@/components/seja_voluntario/sections_and_volunteers/SectionsAndVolunteers";
+import SelectionProcess from "@/components/seja_voluntario/selection_process/SelectionProcess";
 
 const SejaVoluntario = () => {
   return (
-    <div className="flex flex-col gap-4 items-center overflow-x-hidden">
-      <div className="flex flex-col items-center w-full h-full max-w-[1440px] text-preto1">
-        <Hero/>
+    <main className="flex flex-col gap-4 items-center overflow-x-hidden">
+      <div className="flex flex-col items-center w-screen h-full max-w-[1440px] text-preto1">
+        <Hero />
+        <ReasonsToBeVolunteer />
+        <PartnerEnterprises />
+        <SelectionProcess />
+        <SectionsAndVolunteers />
       </div>
-    </div>
-  )
-}
+    </main>
+  );
+};
 
-export default SejaVoluntario
+export default SejaVoluntario;
