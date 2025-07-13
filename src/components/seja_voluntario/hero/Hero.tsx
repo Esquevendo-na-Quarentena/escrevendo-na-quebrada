@@ -4,7 +4,7 @@ import CardHero from "@/components/seja_voluntario/hero/CardHero";
 const Hero = () => {
   return (
     <section className="min-h-[calc(100vh-97px)] w-screen flex items-center justify-center px-6 md:px-12 py-16 text-white bg-center bg-cover bg-[url(/img/seja_voluntario/hero/bg-hero-seja-voluntario.png)]">
-      <div className="w-full max-w-7xl mx-auto flex flex-col md:flex-row items-center px-6 py-6 justify-center gap-20">
+      <div className="w-full max-w-7xl mx-auto flex flex-col md:flex-row items-center px-6 py-6 pt-[6rem] justify-center gap-20">
         <div className="flex-1">
           <div className="mb-6">
             <h1 className="font-bold text-3xl leading-tight tracking-normal text-white1 text-shadow-lg/30">

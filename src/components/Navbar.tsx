@@ -10,6 +10,7 @@ import Button from "./Button";
 const Navbar = () => {
   const [activeMenuItem, setActiveMenuItem] = useState("");
   const [activeSandwichMenu, setActiveSandwichMenu] = useState(false);
+  const [isTransparent, setIsTransparent] = useState(false);
 
   useEffect(() => {
     const sections = document.querySelectorAll("section[id]");
@@ -55,6 +56,12 @@ const Navbar = () => {
     } else {
       setActiveMenuItem("HOME");
     }
+
+    if (pathname === "/seja_voluntario/") {
+      setIsTransparent(() => true);
+    } else {
+      setIsTransparent(() => false);
+    }
   }, [pathname]);
 
   const menuItens = [
@@ -66,14 +73,17 @@ const Navbar = () => {
     { label: "CONTATO", path: "#contato" },
   ];
   return (
-    <nav id="navbar" className="px-6 relative z-30">
+    <nav
+      id="navbar"
+      className={`${isTransparent && "h-0"} px-6 relative z-30 bg-transparent`}
+    >
       <div className="flex gap-5 items-center justify-between mx-auto w-full max-w-[1440px] py-5">
         <div className="flex gap-2">
           <div>
             <Link href={"/"}>
               <Image
                 alt="logo"
-                src={"/img/logo.png"}
+                src={isTransparent ? "/img/logo-white.png" : "/img/logo.png"}
                 width={56}
                 height={56}
                 onClick={() => setActiveMenuItem("Home")}
@@ -81,7 +91,11 @@ const Navbar = () => {
             </Link>
           </div>
           <div className="flex justify-center items-center">
-            <h3 className="text-[#4E164A] font-bold text-xs w-full">
+            <h3
+              className={`${
+                isTransparent ? "text-white1" : "text-roxo-escuro"
+              } font-bold text-xs w-full`}
+            >
               Escrevendo na Quebrada
             </h3>
           </div>
@@ -89,7 +103,11 @@ const Navbar = () => {
 
         <div className="absolute right-2 top-8 lg:hidden cursor-pointer p-2">
           {!activeSandwichMenu && (
-            <FiMenu size={20} onClick={handleToggleMenu} />
+            <FiMenu
+              size={20}
+              onClick={handleToggleMenu}
+              className={`${isTransparent ? "text-white1" : "text-preto1"} `}
+            />
           )}
         </div>
 
@@ -155,6 +173,8 @@ const Navbar = () => {
                     activeMenuItem === item.path.replace("#", "")
                       ? "bg-roxo text-white rounded-full "
                       : "text-black"
+                  } ${
+                    isTransparent && "text-white1"
                   } hover:bg-roxo hover:text-white hover:rounded-full text-xs`}
                 >
                   {item.label}
@@ -167,7 +187,10 @@ const Navbar = () => {
           target="_blank"
           href={" https://www.paraquemdoar.com.br/escrevendo-na-quebrada "}
         >
-          <Button className="rounded-md px-8 py-2 text-sm" bg="bg-[#10a2c7] hidden lg:inline">
+          <Button
+            className="rounded-md px-8 py-2 text-sm"
+            bg="bg-[#10a2c7] hidden lg:inline"
+          >
             DOE
           </Button>
         </Link>
