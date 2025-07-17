@@ -1,5 +1,6 @@
 import Button from "@/components/Button";
 import Image from "next/image";
+import Link from "next/link";
 
 const SectionsAndVolunteers = () => {
   return (
@@ -22,7 +23,11 @@ const SectionsAndVolunteers = () => {
           logo a baixo uma pequena fração das pessoas que fazem nosso projeto
           funcionar!
         </p>
-        <Button className="w-full sm:max-w-xs py-4 px-0 text-sm">CONHEÇA NOSSOS VOLUNTÁRIOS</Button>
+        <Link href={"/setores_e_voluntarios"} className="w-full">
+          <Button className="w-full sm:max-w-xs py-4 px-0 text-sm">
+            CONHEÇA NOSSOS VOLUNTÁRIOS
+          </Button>
+        </Link>
       </div>
     </section>
   );

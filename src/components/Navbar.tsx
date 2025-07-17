@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { FiMenu } from "react-icons/fi";
 import { IoMdClose } from "react-icons/io";
 import Button from "./Button";
@@ -11,6 +11,10 @@ const Navbar = () => {
   const [activeMenuItem, setActiveMenuItem] = useState("");
   const [activeSandwichMenu, setActiveSandwichMenu] = useState(false);
   const [isTransparent, setIsTransparent] = useState(false);
+  const PAGES_WITH_TRANSPARENT_NAVBAR = useMemo(
+    () => ["/seja_voluntario/", "/setores_e_voluntarios/"],
+    []
+  );
 
   useEffect(() => {
     const sections = document.querySelectorAll("section[id]");
@@ -57,12 +61,12 @@ const Navbar = () => {
       setActiveMenuItem("HOME");
     }
 
-    if (pathname === "/seja_voluntario/") {
+    if (PAGES_WITH_TRANSPARENT_NAVBAR.includes(pathname)) {
       setIsTransparent(() => true);
     } else {
       setIsTransparent(() => false);
     }
-  }, [pathname]);
+  }, [PAGES_WITH_TRANSPARENT_NAVBAR, pathname]);
 
   const menuItens = [
     { label: "HOME", path: "#sobre" },
