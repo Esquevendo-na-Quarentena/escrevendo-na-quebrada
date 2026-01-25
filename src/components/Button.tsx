@@ -1,21 +1,26 @@
 interface ButtonProps {
   children: string;
   className?: string;
-  bg?: string;
-  hover?: string;
   textColor?: string;
+  colorVariant?: keyof typeof colorVariants;
 }
+
+const colorVariants = {
+  purple: 'bg-roxo-escuro text-white1 hover:bg-roxo',
+  lightBlue: 'bg-azul-claro text-white1',
+  outlinedLightBlue: 'bg-white1 border border-azul-claro text-azul-claro hover:bg-azul-claro hover:text-white',
+  ciano: 'bg-[#10a2c7] text-white1 hover:bg-ciano',
+};
 
 const Button = ({
   children,
+  colorVariant = "purple",
   className,
-  bg = "bg-roxo-escuro",
-  hover = "hover:bg-roxo",
-  textColor = "text-white",
 }: ButtonProps) => {
+
   return (
     <button
-      className={`${bg} w-full px-6 ${textColor} rounded-4xl cursor-pointer ${hover} active:opacity-85 uppercase shadow-md/80 shadow-preto1 ${className}`}
+      className={`${colorVariants[colorVariant]} w-full px-6 rounded-4xl cursor-pointer active:opacity-85 uppercase shadow-sm/60 shadow-preto1 transition-colors ${className}`}
     >
       {children}
     </button>
