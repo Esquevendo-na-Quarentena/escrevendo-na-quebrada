@@ -45,10 +45,12 @@ const StackedCards = () => {
             <p className="text-sm">Visitas ao Museu</p>
           </div>
         </div>
-        <div className="flex flex-col gap-2 mt-3">
-          <div className="bg-white1 rounded-4xl w-full h-3"></div>
-          <div className="bg-white1 rounded-4xl w-4/5 h-3"></div>
-          <div className="bg-white1 rounded-4xl w-11/12 h-3"></div>
+        <div className="mt-5">
+          <p className="inline-block bg-azul-claro/42 border-1 border-white p-2 rounded-full px-4">A</p>
+          <p className="inline-block -ml-2 bg-azul-claro/42 border-1 border-white p-2 rounded-full px-4">B</p>
+          <p className="inline-block -ml-2 bg-azul-claro/42 border-1 border-white p-2 rounded-full px-4">C</p>
+          <p className="inline-block -ml-2 bg-azul-claro/42 border-1 border-white p-2 rounded-full px-4">D</p>
+          <p className="inline-block text-xs">+12 participantes</p>
         </div>
       </Card>
     </div>

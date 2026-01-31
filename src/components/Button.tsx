@@ -2,6 +2,7 @@ interface ButtonProps {
   children: string;
   className?: string;
   colorVariant?: keyof typeof colorVariants;
+  disabled?: boolean;
 }
 
 const colorVariants = {
@@ -16,10 +17,12 @@ const Button = ({
   children,
   colorVariant = "purple",
   className,
+  disabled,
 }: ButtonProps) => {
 
   return (
     <button
+      disabled={disabled}
       className={`${colorVariants[colorVariant]} w-full px-6 rounded-4xl cursor-pointer active:opacity-85 uppercase shadow-sm/60 shadow-preto1 transition-colors duration-200 ${className}`}
     >
       {children}

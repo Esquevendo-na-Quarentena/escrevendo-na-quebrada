@@ -1,9 +1,8 @@
-import { BsChatRight } from "react-icons/bs";
+import { BsChatRightText } from "react-icons/bs";
+import { CiMedal } from "react-icons/ci";
 import { IoMdGlobe } from "react-icons/io";
-import { RiSpeakLine } from "react-icons/ri";
 import { TbWriting } from "react-icons/tb";
 import Card from "./Card";
-import { CiMedal } from "react-icons/ci";
 
 const CARD_CONTENT = [
   {
@@ -14,7 +13,7 @@ const CARD_CONTENT = [
   {
     title: "Escrever, reescrever e argumentar",
     description: 'A escrita é trabalhada como prática discursiva e social, com acompanhamento contínuo, devolutivas e reescritas orientadas.',
-    icon: <div className="bg-azul-claro/42 text-ciano text-5xl inline-block rounded-2xl p-6"><RiSpeakLine /></div>,
+    icon: <div className="bg-azul-claro/42 text-ciano text-5xl inline-block rounded-2xl p-6"><BsChatRightText /></div>,
   },
   {
     title: "Aprender para além da sala de aula",
@@ -32,7 +31,7 @@ const CardsSection = () => {
   return (
     <section className="w-screen mt-40 md:mt-0">
       <div className="w-full mx-auto max-w-7xl px-6 py-30">
-        <h2 className="font-bold text-4xl md:text-6xl mb-8">Nossa <span className="text-ciano">proposta pedagógica</span></h2>
+        <h2 className="font-bold text-4xl lg:text-6xl mb-8">Nossa <span className="text-ciano">proposta pedagógica</span></h2>
         <p className="font-normal md:text-xl leading-6 tracking-normal text-preto1 mb-12">
           Formação em escrita e leitura crítica a partir da escrevivência,
           articulando as vivências da periferia com a preparação para o vestibular.

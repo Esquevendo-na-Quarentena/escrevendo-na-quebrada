@@ -3,6 +3,7 @@ import { FaPeopleGroup } from "react-icons/fa6";
 import { PiHandHeartFill } from "react-icons/pi";
 import Badge from "./Badge";
 import StackedCards from "./StackedCards";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -11,22 +12,25 @@ const Hero = () => {
         <div className="flex-1">
           <div className="mb-6">
             <Badge applicationSeason="open">Inscrições abertas</Badge>
-            <h1 className="font-bold text-4xl md:text-6xl leading-tight tracking-normal text-preto1 mt-4">
+            <h1 className="font-bold text-4xl lg:text-6xl leading-tight tracking-normal text-preto1 mt-4">
               Escrevendo {' '}
               <br /><span className="text-ciano">na Quebrada</span>
             </h1>
           </div>
           <div className="mb-12">
             <p className="m-0 font-normal md:text-xl leading-6 tracking-normal text-preto1">
-              Iniciativa educacional que utiliza a escrita e a literatura 
-              como ferramentas de expressão e fortalecimento do pensamento crítico. 
+              Iniciativa educacional que utiliza a escrita e a literatura
+              como ferramentas de expressão e fortalecimento do pensamento crítico.
               Vem ampliar seu repertório, desenvolver sua escrita e fortalecer sua habilidade de leitura e reflexão.
             </p>
           </div>
           <div className="flex gap-4">
-            <Button colorVariant="ciano" className="py-2 max-w-sm uppercase text-sm md:text-base">
-              Inscreva-se
-            </Button>
+            <Link href='#editaiseinscricoes' className="w-full">
+              <Button colorVariant="ciano" className="py-2 max-w-sm uppercase text-sm md:text-base">
+                Inscreva-se
+              </Button>
+
+            </Link>
             <Button colorVariant="outlinedLightBlue" className="py-2 max-w-sm uppercase border-1 text-sm md:text-base">
               Saiba mais
             </Button>
