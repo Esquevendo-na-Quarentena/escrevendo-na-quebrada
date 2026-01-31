@@ -1,3 +1,4 @@
+import CardsSection from "@/components/inscricoes/cards_section/CardsSection";
 import Hero from "@/components/inscricoes/hero/Hero";
 
 const Inscricoes = () => {
@@ -5,6 +6,7 @@ const Inscricoes = () => {
     <main className="flex flex-col gap-4 items-center overflow-x-hidden">
       <div className="flex flex-col items-center w-screen h-full max-w-[1440px] text-preto1">
         <Hero />
+        <CardsSection />
       </div>
     </main>
   );

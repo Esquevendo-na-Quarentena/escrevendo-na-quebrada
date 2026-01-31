@@ -17,7 +17,7 @@ const Badge = ({ applicationSeason, children }: BadgeProps) => {
   }
 
   return (
-    <div className={`${applicationState[applicationSeason]} flex justify-center items-center text-preto1 font-bold w-[max-content] py-1 px-2 pl-3 rounded-4xl`}>
+    <div className={`${applicationState[applicationSeason]} flex justify-center items-center text-preto1 font-bold w-[max-content] py-1 px-3 rounded-4xl`}>
       <div className={`${innedDotState[applicationSeason]} w-2 h-2 rounded-full mr-2`} />{children}
     </div>
   );
